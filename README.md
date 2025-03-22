@@ -47,6 +47,35 @@ This project is divided into three main modules:
 - Visualizations using matplotlib.
 - Support for additional algorithms (LFU, CLOCK etc.)
 - More interactive GUI with animations
+### ⬇️ Requirements/Installation
+- <b>IDE:</b> Make sure to have any IDE on your device (VS Code in my case).
+- <b>PYTHON:</b> Check if Python is installed in your device by entering this command in Command Prompt:
+  
+  ```sh
+  python --version
+  ```
+  - If Python is installed, something like this will appear - Python X.XX.X (indicates version)
+  - Else, install Python from here - [Download](https://www.python.org/downloads/)
+  - When installing Python, check the box: ✅ "Add Python to PATH" before clicking install OR add it manually to PATH later from Environment Variables.
+  - Check by running the above mentioned command again.
+- <b>TKINTER:</b> It comes pre-installed with Python.
+  - Check if tkinter is working using this command:
+    
+    ```sh
+    python -c "import tkinter; tkinter._test()"
+    ```
+  - If a small GUI window pops up, tkinter is working and you're ready to go.
+  - If not, try running this command:
+    
+  ```sh
+  pip install tkinter
+  ```
+- <b>RUN:</b> Now everything is ready and you just need to CLONE this Repository to your device and execute the program.
+  - To clone this repository, enter this command:
+
+    ```sh
+    git clone https://github.com/arpan-dey-xo/Page-Replacement-Simulator
+    ```
 ### 📜 License
 MIT License
 ### 🤓 Contributors
