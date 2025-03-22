@@ -67,9 +67,9 @@ This project is divided into three main modules:
   - If a small GUI window pops up, tkinter is working and you're ready to go.
   - If not, try running this command:
     
-  ```sh
-  pip install tkinter
-  ```
+    ```sh
+    pip install tkinter
+    ```
 - <b>RUN:</b> Now everything is ready and you just need to CLONE this Repository to your device and execute the program.
   - To clone this repository, enter this command:
 
