@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from controller import run_simulation_detailed
+from controller import run_simulation_detailed, run_simulation
 
 def run_sim():
     pages_str = pages_entry.get()
@@ -34,6 +34,8 @@ def run_sim():
             step['removed'] if step['removed'] is not None else "",
             ", ".join(map(str, step['memory_after']))
         ))
+
+    run_simulation(pages_str, capacity, algorithm)
 
 app = tk.Tk()
 app.title("Page Replacement Simulator")

@@ -17,10 +17,12 @@ This project simulates page replacement algorithms used in demand paging in virt
 - Displays step-by-step execution of the algorithms.
 - Shows page fault count and efficiency comparison.
 - Provides a Graphical User Interface (GUI) for easy interaction.
+- Plots a graph to show number of Page Faults occuring in each algorithm.
 ### ⚙️ Tech Stack
 - Programming Language: Python
 - Libraries:
   - tkinter (for GUI)
+  - matplotlib (for visualizations)
 - Execution Mode: Graphical User Interface (GUI)
 ### 🏗️ Project Structure
 This project is divided into three main modules:
@@ -36,17 +38,18 @@ This project is divided into three main modules:
 - Acts as the bridge between GUI and Algorithms.
 - Calls the appropriate page replacement function.
 - Formats and sends the results to the GUI for display.
+- Responsible for the visualization.
 4. Entry Point (main.py)
 - Serves as the entry point that launches the GUI.
 ### 🚀 How It Works Internally
 - User inputs a sequence of page requests and memory frame size via the GUI.
-- The controller module processes the input and calls the appropriate algorithm.
+- The controller module processes the input and calls the appropriate algorithm and generates visuals for all algorithms.
 - The algorithm module executes the logic and calculates page faults.
-- The GUI displays step-by-step memory updates and final results.
+- The GUI displays step-by-step memory updates, final results and plots the graph.
 ### 📌 Future Enhancements
-- Visualizations using matplotlib.
-- Support for additional algorithms (LFU, CLOCK etc.)
-- More interactive GUI with animations
+- Support for additional algorithms (LFU, CLOCK etc).
+- More interactive GUI with animations.
+- Identifying best algorithm for a given scenario.
 ### ⬇️ Requirements/Installation
 - <b>IDE:</b> Make sure to have any IDE on your device (VS Code in my case).
 - <b>PYTHON:</b> Check if Python is installed in your device by entering this command in Command Prompt:
@@ -64,17 +67,22 @@ This project is divided into three main modules:
     ```sh
     python -c "import tkinter; tkinter._test()"
     ```
-  - If a small GUI window pops up, tkinter is working and you're ready to go.
-  - If not, try running this command:
+  - If a small GUI window pops up, tkinter is working.
+- <b>MATPLOTLIB:</b> Install matplotlib using the following command:
+  
+  ```sh
+  pip install matplotlib
+  ```
+  - To check if matplotlib is successfully installed:
     
     ```sh
-    pip install tkinter
+    pip show matplotlib
     ```
 - <b>RUN:</b> Now everything is ready and you just need to CLONE this Repository to your device and execute the program.
   - To clone this repository, enter this command:
 
     ```sh
-    git clone https://github.com/arpan-dey-xo/Page-Replacement-Simulator
+    git clone --branch main --single-branch https://github.com/arpan-dey-xo/Page-Replacement-Simulator 
     ```
 ### 📜 License
 MIT License
